@@ -8,17 +8,17 @@ group = 'hello'
 version = '0.0.1-SNAPSHOT'
 
 java {
-	sourceCompatibility = '17'
+	sourceCompatibility = '21' // 자바 21로 변경
 }
 
 repositories {
-	mavenCentral()
+	mavenCentral() // 라이브러리를 다운받는 사이트
 }
 
 dependencies {
 	implementation 'org.springframework.boot:spring-boot-starter-thymeleaf'
 	implementation 'org.springframework.boot:spring-boot-starter-web'
-	testImplementation 'org.springframework.boot:spring-boot-starter-test'
+	testImplementation 'org.springframework.boot:spring-boot-starter-test' // 테스트 라이브러리
 }
 
 tasks.named('test') {
